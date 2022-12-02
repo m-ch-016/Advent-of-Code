@@ -1,3 +1,58 @@
+'''
+++++++++ Task 1 +++++++++
+import re, time, hashlib
+
+inputFile = open('input.txt', 'r')
+inputStr = inputFile.readlines()
+
+totalScore = 0
+
+for choice in range(len(inputStr)):
+	tempScore = 0
+	oppChoice = inputStr[choice][0]
+	myChoice = inputStr[choice][2]
+
+	if myChoice == 'X':
+		tempScore += 1
+	elif myChoice == 'Y':
+		tempScore += 2
+	else:
+		tempScore += 3
+	# print(oppChoice)
+	# print(myChoice)
+
+
+	if oppChoice == 'A' and myChoice == 'X':
+		tempScore += 3
+	if oppChoice == 'A' and myChoice == 'Y':
+		tempScore += 6
+	if oppChoice == 'A' and myChoice == 'Z':
+		tempScore += 0
+
+	if oppChoice == 'B' and myChoice == 'X':
+		tempScore += 0
+	if oppChoice == 'B' and myChoice == 'Y':
+		tempScore += 3
+	if oppChoice == 'B' and myChoice == 'Z':
+		tempScore += 6
+
+	if oppChoice == 'C' and myChoice == 'X':
+		tempScore += 6
+	if oppChoice == 'C' and myChoice == 'Y':
+		tempScore += 0
+	if oppChoice == 'C' and myChoice == 'Z':
+		tempScore += 3
+
+	totalScore += tempScore
+
+print(totalScore)
+'''
+
+
+
+
+''' 
+++++++++ TASK 2 +++++++++
 import re, time, hashlib
 
 inputFile = open('input.txt', 'r')
@@ -38,3 +93,5 @@ tempScore = 0
 	totalScore += tempScore
 
 print(totalScore)
+
+'''

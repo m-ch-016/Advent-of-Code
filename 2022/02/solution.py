@@ -1,5 +1,4 @@
-'''
-++++++++ Task 1 +++++++++
+
 import re, time, hashlib
 
 inputFile = open('input.txt', 'r')
@@ -7,6 +6,7 @@ inputStr = inputFile.readlines()
 
 totalScore = 0
 
+#Task 1
 for choice in range(len(inputStr)):
 	tempScore = 0
 	oppChoice = inputStr[choice][0]
@@ -45,21 +45,7 @@ for choice in range(len(inputStr)):
 
 	totalScore += tempScore
 
-print(totalScore)
-'''
-
-
-
-
-''' 
-++++++++ TASK 2 +++++++++
-import re, time, hashlib
-
-inputFile = open('input.txt', 'r')
-inputStr = inputFile.readlines()
-
-totalScore = 0
-
+#Task 2
 for choice in range(len(inputStr)):
 tempScore = 0
 	oppChoice = inputStr[choice][0]
@@ -93,5 +79,3 @@ tempScore = 0
 	totalScore += tempScore
 
 print(totalScore)
-
-'''
